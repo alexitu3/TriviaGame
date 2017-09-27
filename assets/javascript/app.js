@@ -9,22 +9,20 @@ var gameOper = {
           {Q4 : "asdf", a1 : "klajsd", a2 : "asdf", a3 : "sdfg", a4 : "werg"  },
           {Q5 : "asdf", a1 : "klajsd", a2 : "asdf", a3 : "sdfg", a4 : "werg"  }
     
-    timer : someFunction()
-
 
 };
 
 
 function start() {
 
-  $("btn").on("click")
+  $("#button").on("click")
 
 
-}
+};
 
 function countdown() {
   var interval = setIntravel(decrament, 1000);
-}
+};
 
 function decrament() {
   number--;
@@ -32,7 +30,7 @@ function decrament() {
     end();
 
   }
-}
+};
 
 
 function end() {
