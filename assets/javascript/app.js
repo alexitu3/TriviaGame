@@ -1,41 +1,92 @@
 
 
     
-    // var qa = {
+    var q = {
 
-
-    //   Q1 : { 
-    //       Q : "Where in the world is Carmen San Diego?",
-    //       A : ["nvjbhj","klajsd", "asdf","sdfg", "werg"]
+        questionAnswers: { 
+      Q1 : { 
+          Q : "Where in the world is Carmen San Diego?",
+          A : ["answer 1","answer 2", "answer 3","answer 4", "answer 5"]
            
-    //        },
+           },
 
-    //   Q2 : {
-    //           Q : "why did the chicken cross the road?",
-    //           A : ["asdf","klajsd", "asdf", "sdfg", "werg"]
+      Q2 : {
+              Q : "why did the chicken cross the road?",
+              A : ["answer 1","answer 2", "answer 3", "answer 4", "answer 5"]
 
-    //          },   
+             },   
 
-    //   Q3 : { 
-    //            Q : "asdfasd",
-    //            A :  ["asdf",  "klajsd", "asdf", "sdfg", "werg"]
+      Q3 : { 
+               Q : "question3",
+               A :  ["answer 1",  "answer 2", "answer 3", "answer4", "answer5"]
              
-    //         },
+            },
 
-    //   Q4 : { 
-    //           Q : "asdf",
-    //           A : ["asdf",  "klajsd", "asdf", "sdfg", "werg"]
+      Q4 : { 
+              Q : "question4",
+              A : ["answer 1",  "answer 2", "answer 3", "answer4", "answer5"]
             
-    //         },
+            },
 
-    //   Q5 : {    
-    //           Q : "lkj"
-    //           A : ["asdf",  "klajsd", "asdf", "sdfg", "werg"] 
-        
-    //     } 
-    // };
+      Q5 : {    
+              Q : "question5",
+              A : ["answer 1",  "answer 2", "answer 3", "answer4", "answer5"] 
+            } 
+          },
 
+
+}
+// i done really know how to sort through this object, so I wanted to make it an array but ran out of time.
+// I also didnt want to hard code everything and was trying many different ways not too. 
+// still need to work on the render function.... 
+// function renderQA() {
+//  var objectKeys = Object.keys()
+//  console.log(obj);
+// for (var key in obj){
+    
+//   console.log(obj);
+
+
+    // if (key === Q1) {
+
+    // }
+
+    // if (key === Q2) {
+
+    // }
+
+    // if (key === Q3) {
+
+    // }
+
+    // if (key === Q4) {
+
+    // }
+
+    // if (key === Q5) {
+
+    // }
+
+
+
+// }
+// }
+
+
+
+
+  // for(var i = 0; i <= q.length; i++) {
    
+
+  //   var question
+
+  //   $(":radio").append("<div>")
+//   }
+  
+
+
+
+
     var startTime = 12;
     var interval;
     function countdown() {
@@ -55,7 +106,7 @@
     }
 
     function renderTime() {
-      console.log(startTime);
+      
 
     }
 
@@ -67,46 +118,22 @@
   
   $("#start").on("click", start);
    
-// function start() {
+function start() {
 
-//   $("#button").on("click")
+  $("#button").on("click")
   
 
-// };
 
-// function countdown() {
-//   var interval = setIntravel(decrament, 1000);
-// };
+// this was to add up the answers...
+function end() {
+  // show # of correct/wrong (or not) answered
 
-// function decrament() {
-//   number--;
-//   $("#show-number").html("<h2>" + number + "</h2>");
-//   if(number === 0) {
-  
-//     end();
-
-//   }
-// };
+  // say game over
+  $("#gameover").html("Game over!!!")
+}
 
 
-// function end() {
-//   // show # of correct/wrong (or not) answered
 
-//   // say game over
-//   $("#gameover").html("Game over!!!")
-// }
+countdown();
+start();
 
-// // still need to work on the render function.... 
-// function renderQA() {
-//   for(var i = 0; i <= 5; i++) {
-//     $(":radio").append("<div>")
-//   }
-// }
-
-// countdown();
-// start();
-
-
-// // where in the world is carman san diego? A: Normandy, Taipei, Kulam
-// // why did the chicken cross the road?
-// // 
