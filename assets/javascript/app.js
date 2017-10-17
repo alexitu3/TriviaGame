@@ -39,6 +39,8 @@
 // i done really know how to sort through this object, so I wanted to make it an array but ran out of time.
 // I also didnt want to hard code everything and was trying many different ways not too. 
 // still need to work on the render function.... 
+// I think im going to change my data into an array, so then I can iterate through each element allowing me to update them to the html each time.
+// use the 
 // function renderQA() {
 //  var objectKeys = Object.keys()
 //  console.log(obj);
