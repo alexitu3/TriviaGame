@@ -36,17 +36,19 @@ function appendQA() {
       $("#questions").append('<input type="radio" value="'+ qa[key].A[i] +'" name="options' + key + ' ">' + qa[key].A[i] + '</input><br></br>');
 
       }
-
-    
-    $("input[type='radio']").click(function() {
-      console.log(key)
-        var correct = $("input[name='options" + key + "']:checked").val();
-    console.log(correct);
-    })
-  }
+    }
 };
 
 appendQA();
+
+$("form").submit(function(event){
+    event.preventDefault();
+    alert("Submitted");
+    
+    var answer = $("input[type='radio'][name='optionsQ1']:checked").val()
+    console.log(answer);
+});
+
 
 
 //     // countdown function
